@@ -1,0 +1,28 @@
+package com.company.couplingtest;
+
+public class LgTV implements TV{
+
+	@Override
+	public void powerOn() {
+		System.out.println("===> LgTV전원을 켠다");
+		
+	}
+
+	@Override
+	public void powerOff() {
+		System.out.println("===> LgTV전원을 끈다");
+		
+	}
+
+	@Override
+	public void volumeUp() {
+		System.out.println("===> LgTV불륨을 올린다");
+		
+	}
+
+	@Override
+	public void volumeDown() {
+		System.out.println("===> LgTV불륨을 내린다");		
+	}
+
+}
