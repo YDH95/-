@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- https://mybatis.org/mybatis-3/ko/index.html 시작하기 -->
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="emp">
+  	<select id="total" resultType="mybatis.vo.EmpVO">
+  		SELECT empno, ename, position FROM emp_tab
+  	</select>
+  	
+  	<insert id="add" parameterType="java.util.Map">
+  		INSERT INTO emp_tab(empno, ename, position) VALUES(#{empno}, #{ename}, #{position})
+  	</insert>
+  </mapper>
