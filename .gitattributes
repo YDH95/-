@@ -1,0 +1,9 @@
+//언어가 잘못 입력 되있을 때
+
+*.html linguist-detectable=false
+
+========================================
+//언어가 안나올 때
+
+demo/** linguist-documentation=false
+demo/** linguist-vendored=false
